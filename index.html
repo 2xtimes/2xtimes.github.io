@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="author" content="Benedict Bull">
+    <meta name="description" content="A demo site for applying to the Founders &amp; Coders winter cohort">
+    <meta property="og:title" content="Benedict Bull's demo site">
+    <meta property="og:description" content="A demo site for applying to the Founders &amp; Coders winter cohort">
+    <title>Benedict Bull's demo site</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel=icon href=/favicon.png>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Jura');
         @font-face {
@@ -15,18 +20,47 @@
     </style> 
 </head>
 <body>
-    <header><h1>Benedict Bull</h1>
-    <p>This is my test website</p></header>
+    <header>
+        <div>
+            <ul>
+                <li><a href="https://github.com/2xtimes" target="_blank"><img class="nav" src="/images/social/github.png"></a></li>
+                <li><a href="https://www.freecodecamp.org/fccc0c6fa97-1ee6-476b-8a9c-c9c572b2df83" target="_blank"><img class="nav" src="/images/social/freecodecamp.png"></a></li>
+                <li><a href="https://www.codewars.com/users/trustfools" target="_blank"><img class="nav" src="/images/social/codewars.png"></a></li>
+            </ul>
+        </div>
+        <div>
+        <p> Hello world, I am...</p>
+        <div><h1>Benedict Bull</h1><div class="back"></div><div class="heart"></div>
+        </div>
+        <p>Welcome to my Coders &amp; Founders website</p>
+        </div>
+    </header>
     <main>
-        <section>
-            This is the first section.
+        <section id="artwork-section">
+            <p>I make artwork. Like this:</p>
         </section>
-        <section>
-            This is the second section.
+        <section id="music-section">
+            <p>And music. Feel free to listen to some here:</p>
+            <div class="container">
+                <div class="soundcloud-embed">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/408031236&color=%23ff7b00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+                <div class="soundcloud-embed">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/335536683&color=%23ff7b00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+                <div class="soundcloud-embed">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281706469&color=%23ff7b00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="website section">
+            <p> Now I want to make websites. A whole lot.</p>
         </section>
     </main>
     <footer>
-        <p>This is the footer.</p>
+        <button type="button" class="block" id="github-profile"><a href="https://github.com/2xtimes" target="_blank">Thanks for checking out my website. My Github profile is here.</a></button>
+        <button type="button" class="block" id="freecodecamp-profile"><a href="https://www.freecodecamp.org/fccc0c6fa97-1ee6-476b-8a9c-c9c572b2df83" target="_blank">You can find me on Freecodecamp here.</a></button>
+        <button type="button" class="block" id="codewars-profile"><a href="https://www.codewars.com/users/trustfools" target="_blank">And you can find me on Codewars here.</a></button>
     </footer>
 </body>
 </html>
