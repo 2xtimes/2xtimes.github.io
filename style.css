@@ -4,9 +4,9 @@ body {
 }
 h1 {
     font-size: 60px;
-    font-family: 'Michroma', sans-serif;
-    font-weight: 800;
-    -webkit-font-smoothing: antialiased; 
+    font-family: "HelveticaNeueLTStd";
+    /*font-weight: 800;
+    -webkit-font-smoothing: antialiased;*/
 }
 header {
     background-color: aquamarine;
@@ -20,7 +20,8 @@ section {
 .bolder {
     font-weight: normal;
     letter-spacing:2px;
-    text-shadow:1px 0 0 currentColor,2px 0 0 currentColor;
+    text-shadow:3px 0 0 currentColor, 6px 0 0 currentColor;
+    text-transform: uppercase; 
   }
 footer {
 
