@@ -17,6 +17,11 @@ section {
     background-color: bisque;
     padding-top: 30px;
 }
+.bolder {
+    font-weight: normal;
+    letter-spacing:2px;
+    text-shadow:1px 0 0 currentColor,2px 0 0 currentColor;
+  }
 footer {
 
 }
