@@ -10,6 +10,7 @@
     <meta property="og:description" content="A demo site for applying to the Founders &amp; Coders winter cohort">
     <title>Benedict Bull's demo site</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="lightbox-gallery.css"
     <link rel=icon href=/favicon.png>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Jura');
@@ -30,31 +31,93 @@
         </div>
         <div>
         <p> Hello world, I am...</p>
-        <div><h1>Benedict Bull</h1><div class="back"></div><div class="heart"></div>
-        </div>
+        <div><h1>Benedict Bull</h1>
+            <!--<img class="me-pic" src="/images/me.png"></div>-->
         <p>Welcome to my Coders &amp; Founders website</p>
         </div>
     </header>
     <main>
         <section id="artwork-section">
-            <p>I make artwork. Like this:</p>
+            <p>I used to work at Phonica Records, managing their website, it was mainly CMS management, but I did get my first tastes of coding, well, just some HTML, CSS etc, nothing too fancy (But I liked it).
+                After that I went to work at Pearson where I also managed a website, working in a Scrum/XP environment. I co-ordinated the small development team we worked with and learnt the basics of Digital Product Management. Here's some work I did there presented via lightbox:
+            </p>
+            <div>
+                <div class="row">
+                    <div class="column">
+                        <img src="/images/ia_ux_sketch_small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="/images/digital_design_and_ux_work_small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="/images/digital_design_and_web_management_small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="/images/ux_ia_development_work_small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                </div>
+                <div id="myGallery" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div class="galleryImage">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="/images/ia_ux_sketch.jpg" style="width:100%">
+                        </div>
+                        <div class="galleryImage">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="/images/digital_design_and_ux_work.jpg" style="width:100%">
+                        </div>
+                        <div class="galleryImage">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="/images/digital_design_and_web_management.jpg" style="width:100%">
+                        </div>
+                        <div class="galleryImage">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="/images/ux_ia_development_work.jpg" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="caption-container">
+                            <p id="caption">Some examples of the work I did for Pearson.</p>
+                        </div>
+                        <div class="column">
+                            <img class="thumbnail-image" src="img1.jpg" onclick="currentSlide(1)" alt="IA &amp; UX Brainstorming">
+                        </div>
+                        <div class="column">
+                            <img class="thumbnail-image" src="img2.jpg" onclick="currentSlide(2)" alt="Digital Design &amp; UX work">
+                        </div>
+                        <div class="column">
+                            <img class="thumbnail-image" src="img3.jpg" onclick="currentSlide(3)" alt="Digital Design &amp; Web Management work for Pearson">
+                        </div>
+                        <div class="column">
+                            <img class="thumbnail-image" src="img4.jpg" onclick="currentSlide(4)" alt="UX &amp; IA development work">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <p>Really I always wanted to be making or building things myself though, so I left to try and learn to be a developer. In my spare time I do the artwork for the record label Unknown To The Unknown, here are some examples that help fill in this javascript gallery:</p>
+            <div class="gallery">
+                <img class="images" src="/images/uttu091_contactless_facebookcover.jpg">
+                <img class="images" src="/images/hotshit042_djclea_facebookcover.jpg">
+                <img class="images" src="/images/uttu089_photonz_facebookcoverv2.jpg">
+                <img class="images" src="/images/uttu092_ludwig_facebookcover.jpg">
+                <img class="images" src="/images/corsica_facebook_retina_withhaus_invert.jpg"> 
+            </div>
         </section>
         <section id="music-section">
-            <p>And music. Feel free to listen to some here:</p>
+            <p>I also do some music stuff. Feel free to listen to some here, while you check out my site, the first one is fairly pumping:</p>
             <div class="container">
                 <div class="soundcloud-embed">
                     <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/408031236&color=%23ff7b00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                 </div>
+                <p>This one is a bit more chilled</p>
                 <div class="soundcloud-embed">
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/335536683&color=%23ff7b00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                </div>
-                <div class="soundcloud-embed">
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281706469&color=%23ff7b00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FLostContinent%2Fchapter-i-the-journey%2F" frameborder="0" ></iframe>
                 </div>
             </div>
         </section>
-        <section id="website section">
-            <p> Now I want to make websites. A whole lot.</p>
+        <section id="website-section">
+            <p>What I really want to do now, is code.</p>
         </section>
     </main>
     <footer>
@@ -62,5 +125,64 @@
         <button type="button" class="block" id="freecodecamp-profile"><a href="https://www.freecodecamp.org/fccc0c6fa97-1ee6-476b-8a9c-c9c572b2df83" target="_blank">You can find me on Freecodecamp here.</a></button>
         <button type="button" class="block" id="codewars-profile"><a href="https://www.codewars.com/users/trustfools" target="_blank">And you can find me on Codewars here.</a></button>
     </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("images");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2500);
+      }
+    </script>
+    <script>
+            // Open the Modal
+            function openModal() {
+              document.getElementById('myGallery').style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+              document.getElementById('myGallery').style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("galleryImage");
+              var dots = document.getElementsByClassName("thumbnail-image");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
 </body>
 </html>
